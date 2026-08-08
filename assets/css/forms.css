@@ -1,0 +1,344 @@
+/* ==========================================================
+   HANJARI'S MUSIC HOUSE STOCK MAINTENANCE SYSTEM
+   Forms Stylesheet
+   forms.css
+========================================================== */
+
+/* ===============================
+   Form Container
+================================= */
+
+.form-container{
+
+    background:#FFFFFF;
+
+    padding:35px;
+
+    border-radius:12px;
+
+    border-top:5px solid #C9A227;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    margin-bottom:30px;
+
+}
+
+/* ===============================
+   Form Titles
+================================= */
+
+.form-container h2,
+.form-container h3,
+.form-container h4{
+
+    color:#0F172A;
+
+    font-weight:700;
+
+    margin-bottom:25px;
+
+}
+
+.form-container p{
+
+    color:#6C757D;
+
+    margin-bottom:20px;
+
+}
+
+/* ===============================
+   Labels
+================================= */
+
+.form-label,
+label{
+
+    font-weight:600;
+
+    color:#0F172A;
+
+    margin-bottom:8px;
+
+}
+
+/* ===============================
+   Inputs
+================================= */
+
+.form-control,
+.form-select{
+
+    border-radius:8px;
+
+    border:1px solid #CED4DA;
+
+    padding:10px 15px;
+
+    transition:all .3s ease;
+
+    box-shadow:none;
+
+}
+
+.form-control:focus,
+.form-select:focus{
+
+    border-color:#C9A227;
+
+    box-shadow:0 0 0 .2rem rgba(201,162,39,.2);
+
+}
+
+/* ===============================
+   Textarea
+================================= */
+
+textarea{
+
+    resize:vertical;
+
+    min-height:120px;
+
+}
+
+/* ===============================
+   Validation
+================================= */
+
+.form-control.is-valid{
+
+    border-color:#198754;
+
+}
+
+.form-control.is-invalid{
+
+    border-color:#DC3545;
+
+}
+
+/* ===============================
+   Buttons
+================================= */
+
+.btn{
+
+    border-radius:8px;
+
+    font-weight:600;
+
+    padding:10px 20px;
+
+    transition:all .3s ease;
+
+}
+
+/* Save */
+
+.btn-save{
+
+    background:#198754;
+
+    color:#FFFFFF;
+
+    border:none;
+
+}
+
+.btn-save:hover{
+
+    background:#157347;
+
+    color:#FFFFFF;
+
+    transform:translateY(-2px);
+
+}
+
+/* Cancel */
+
+.btn-cancel{
+
+    background:#DC3545;
+
+    color:#FFFFFF;
+
+    border:none;
+
+}
+
+.btn-cancel:hover{
+
+    background:#BB2D3B;
+
+    color:#FFFFFF;
+
+    transform:translateY(-2px);
+
+}
+
+/* Primary */
+
+.btn-primary{
+
+    border:none;
+
+    font-weight:600;
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-2px);
+
+}
+
+/* Secondary */
+
+.btn-secondary:hover{
+
+    transform:translateY(-2px);
+
+}
+
+/* Warning */
+
+.btn-warning{
+
+    color:#FFFFFF;
+
+}
+
+.btn-warning:hover{
+
+    color:#FFFFFF;
+
+    transform:translateY(-2px);
+
+}
+
+/* Success */
+
+.btn-success:hover{
+
+    transform:translateY(-2px);
+
+}
+
+/* Dark */
+
+.btn-dark:hover{
+
+    transform:translateY(-2px);
+
+}
+
+/* ===============================
+   Input Groups
+================================= */
+
+.input-group-text{
+
+    background:#F8F9FA;
+
+    border:1px solid #CED4DA;
+
+    color:#495057;
+
+}
+
+/* ===============================
+   Required Field Indicator
+================================= */
+
+.required{
+
+    color:#DC3545;
+
+    font-weight:bold;
+
+}
+
+/* ===============================
+   Form Sections
+================================= */
+
+.form-section{
+
+    margin-bottom:30px;
+
+}
+
+.form-section-title{
+
+    font-size:1.1rem;
+
+    font-weight:700;
+
+    color:#0F172A;
+
+    border-left:5px solid #C9A227;
+
+    padding-left:12px;
+
+    margin-bottom:20px;
+
+}
+
+/* ===============================
+   Readonly Fields
+================================= */
+
+input[readonly]{
+
+    background:#F8F9FA;
+
+    cursor:not-allowed;
+
+}
+
+/* ===============================
+   Disabled Fields
+================================= */
+
+input:disabled,
+select:disabled,
+textarea:disabled{
+
+    background:#E9ECEF;
+
+    cursor:not-allowed;
+
+}
+
+/* ===============================
+   Card Animation
+================================= */
+
+.form-container{
+
+    animation:fadeIn .5s ease;
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}

@@ -1,0 +1,574 @@
+/* ==========================================================
+   HANJARI'S MUSIC HOUSE
+   LOGIN PAGE
+   CLEAN FINAL VERSION
+========================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,
+body{
+    width:100%;
+    min-height:100%;
+}
+
+body.login-page{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:30px 20px;
+
+    font-family:'Poppins',sans-serif;
+
+    background:
+        radial-gradient(
+            circle at 10% 10%,
+            rgba(255,215,0,.16),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 90% 90%,
+            rgba(255,255,255,.06),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #0F172A 0%,
+            #16213E 50%,
+            #1E293B 100%
+        );
+
+    overflow:auto;
+}
+
+
+/* ==========================================================
+   LOGIN CONTAINER
+========================================================== */
+
+body.login-page .login-container{
+
+    position:relative;
+
+    width:430px;
+
+    max-width:100%;
+
+    background:#FFFFFF;
+
+    padding:42px 40px 30px;
+
+    border-radius:18px;
+
+    border-top:6px solid #FFD700;
+
+    box-shadow:
+        0 25px 55px rgba(0,0,0,.35);
+
+    text-align:left;
+}
+
+
+/* ==========================================================
+   LOGO
+========================================================== */
+
+body.login-page .login-icon{
+
+    width:86px;
+
+    height:86px;
+
+    margin:0 auto 24px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:#0F172A;
+
+    border:4px solid #FFD700;
+
+    color:#FFD700;
+
+    font-size:34px;
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,.22);
+}
+
+
+/* ==========================================================
+   TITLE
+========================================================== */
+
+body.login-page .login-container h1{
+
+    text-align:center;
+
+    color:#0F172A;
+
+    font-size:2rem;
+
+    line-height:1.25;
+
+    font-weight:700;
+
+    margin:0 0 12px;
+}
+
+body.login-page .login-ornament{
+
+    text-align:center;
+
+    color:#FFD700;
+
+    font-size:1rem;
+
+    letter-spacing:7px;
+
+    margin-bottom:16px;
+}
+
+body.login-page .login-subtitle{
+
+    text-align:center;
+
+    color:#64748B;
+
+    font-size:.95rem;
+
+    margin-bottom:34px;
+}
+
+
+/* ==========================================================
+   FORM
+========================================================== */
+
+body.login-page .login-form{
+
+    width:100%;
+}
+
+
+/* ==========================================================
+   FIELD
+========================================================== */
+
+body.login-page .login-field{
+
+    position:relative;
+
+    width:100%;
+
+    height:58px;
+
+    margin-bottom:28px;
+}
+
+
+/* ==========================================================
+   FIELD ICON
+========================================================== */
+
+body.login-page .login-field .field-icon{
+
+    position:absolute;
+
+    left:4px;
+
+    top:-21px;
+
+    color:#000000;
+
+    font-size:18px;
+
+    z-index:5;
+
+    pointer-events:none;
+}
+
+
+/* ==========================================================
+   USERNAME / PASSWORD
+========================================================== */
+
+body.login-page .login-field > input[type="text"],
+body.login-page .login-field > input[type="password"]{
+
+    display:block;
+
+    width:100% !important;
+
+    height:58px !important;
+
+    margin:0 !important;
+
+    padding:0 50px 0 20px !important;
+
+    border:1px solid #CBD5E1 !important;
+
+    border-radius:11px !important;
+
+    background:#FAFAFA !important;
+
+    color:#0F172A !important;
+
+    font-family:'Poppins',sans-serif !important;
+
+    font-size:15px !important;
+
+    outline:none !important;
+
+    box-shadow:none;
+
+}
+
+body.login-page .login-field > input[type="text"]:focus,
+body.login-page .login-field > input[type="password"]:focus{
+
+    background:#FFFFFF !important;
+
+    border-color:#FFD700 !important;
+
+    box-shadow:
+        0 0 0 3px rgba(255,215,0,.18) !important;
+}
+
+body.login-page .login-field > input::placeholder{
+
+    color:#94A3B8 !important;
+}
+
+
+/* ==========================================================
+   PASSWORD TOGGLE
+   THIS IS A SPAN, NOT A BUTTON
+========================================================== */
+
+body.login-page .password-field .password-toggle{
+
+    position:absolute !important;
+
+    right:12px !important;
+
+    top:50% !important;
+
+    width:34px !important;
+
+    height:34px !important;
+
+    transform:translateY(-50%) !important;
+
+    display:flex !important;
+
+    align-items:center !important;
+
+    justify-content:center !important;
+
+    padding:0 !important;
+
+    margin:0 !important;
+
+    background:transparent !important;
+
+    border:none !important;
+
+    border-radius:50% !important;
+
+    color:#64748B !important;
+
+    font-size:16px !important;
+
+    line-height:1 !important;
+
+    cursor:pointer !important;
+
+    box-shadow:none !important;
+
+    z-index:20 !important;
+}
+
+body.login-page .password-field .password-toggle:hover{
+
+    background:#F1F5F9 !important;
+
+    color:#0F172A !important;
+
+}
+
+body.login-page .password-field .password-toggle i{
+
+    margin:0 !important;
+
+    padding:0 !important;
+
+}
+
+
+/* ==========================================================
+   REMEMBER ME
+========================================================== */
+
+body.login-page .remember-row{
+
+    width:100%;
+
+    min-height:22px;
+
+    display:flex !important;
+
+    flex-direction:row !important;
+
+    align-items:center !important;
+
+    justify-content:flex-start !important;
+
+    gap:9px !important;
+
+    margin:0 0 20px !important;
+
+    padding:0 !important;
+}
+
+
+/* RESET ALL GLOBAL INPUT RULES FOR CHECKBOX */
+
+body.login-page .login-form .remember-row input[type="checkbox"]{
+
+    display:block !important;
+
+    appearance:auto !important;
+
+    -webkit-appearance:checkbox !important;
+
+    width:17px !important;
+
+    min-width:17px !important;
+
+    max-width:17px !important;
+
+    height:17px !important;
+
+    min-height:17px !important;
+
+    max-height:17px !important;
+
+    margin:0 !important;
+
+    padding:0 !important;
+
+    border:none !important;
+
+    border-radius:3px !important;
+
+    background:initial !important;
+
+    box-shadow:none !important;
+
+    outline:none;
+
+    accent-color:#FFD700;
+
+    cursor:pointer;
+
+}
+
+
+body.login-page .login-form .remember-row label{
+
+    position:static !important;
+
+    display:block !important;
+
+    width:auto !important;
+
+    height:auto !important;
+
+    margin:0 !important;
+
+    padding:0 !important;
+
+    color:#334155 !important;
+
+    font-family:'Poppins',sans-serif !important;
+
+    font-size:.9rem !important;
+
+    font-weight:400 !important;
+
+    line-height:17px !important;
+
+    cursor:pointer !important;
+
+}
+
+
+/* ==========================================================
+   LOGIN BUTTON
+========================================================== */
+
+body.login-page .login-form .login-button{
+
+    display:flex !important;
+
+    align-items:center !important;
+
+    justify-content:center !important;
+
+    width:100% !important;
+
+    height:56px !important;
+
+    margin:0 !important;
+
+    padding:0 20px !important;
+
+    border:none !important;
+
+    border-radius:10px !important;
+
+    background:#FFD700 !important;
+
+    color:#0F172A !important;
+
+    font-family:'Poppins',sans-serif !important;
+
+    font-size:15px !important;
+
+    font-weight:700 !important;
+
+    line-height:1 !important;
+
+    cursor:pointer !important;
+
+    box-shadow:none !important;
+
+}
+
+body.login-page .login-form .login-button:hover{
+
+    background:#E6C200 !important;
+
+    color:#0F172A !important;
+
+    transform:translateY(-2px);
+
+    box-shadow:
+        0 9px 18px rgba(255,215,0,.30) !important;
+}
+
+body.login-page .login-form .login-button i{
+
+    margin-right:8px !important;
+}
+
+
+/* ==========================================================
+   FOOTER
+========================================================== */
+
+body.login-page .login-footer{
+
+    margin-top:24px;
+
+    padding-top:18px;
+
+    border-top:1px solid #E2E8F0;
+
+    text-align:center;
+
+    color:#64748B;
+
+    font-size:.82rem;
+
+    line-height:1.7;
+}
+
+body.login-page .login-footer strong{
+
+    color:#475569;
+
+    font-weight:600;
+}
+
+
+/* ==========================================================
+   ERROR
+========================================================== */
+
+body.login-page .login-alert{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    background:#FEF2F2;
+
+    color:#B91C1C;
+
+    border:1px solid #FECACA;
+
+    border-left:4px solid #DC2626;
+
+    border-radius:8px;
+
+    padding:11px 13px;
+
+    margin-bottom:20px;
+
+    font-size:.86rem;
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:600px){
+
+    body.login-page{
+
+        padding:20px 14px;
+    }
+
+    body.login-page .login-container{
+
+        width:100%;
+
+        padding:34px 24px 26px;
+
+        border-radius:15px;
+    }
+
+    body.login-page .login-container h1{
+
+        font-size:1.65rem;
+    }
+
+    body.login-page .login-icon{
+
+        width:76px;
+
+        height:76px;
+
+        font-size:30px;
+    }
+}

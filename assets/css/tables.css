@@ -1,0 +1,325 @@
+/* ==========================================================
+   HANJARI'S MUSIC HOUSE STOCK MAINTENANCE SYSTEM
+   Tables Stylesheet
+   tables.css
+========================================================== */
+
+/* ==========================================
+   Table Container
+========================================== */
+
+.table-responsive{
+
+    background:#FFFFFF;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+/* ==========================================
+   Table
+========================================== */
+
+.table{
+
+    margin-bottom:0;
+
+    background:#FFFFFF;
+
+    color:#212529;
+
+    vertical-align:middle;
+
+}
+
+/* ==========================================
+   Header
+========================================== */
+
+.table thead{
+
+    background:#0F172A;
+
+}
+
+.table thead th{
+
+    color:#FFD700;
+
+    border:none;
+
+    font-size:.9rem;
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+    padding:16px;
+
+    white-space:nowrap;
+
+}
+
+/* ==========================================
+   Body
+========================================== */
+
+.table tbody td{
+
+    padding:15px;
+
+    border-color:#E9ECEF;
+
+    vertical-align:middle;
+
+    transition:.2s;
+
+}
+
+/* Zebra Rows */
+
+.table tbody tr:nth-child(even){
+
+    background:#F8F9FA;
+
+}
+
+/* Hover */
+
+.table-hover tbody tr:hover{
+
+    background:#FFF8E1;
+
+}
+
+/* ==========================================
+   Bordered Table
+========================================== */
+
+.table-bordered{
+
+    border:1px solid #DEE2E6;
+
+}
+
+.table-bordered th,
+
+.table-bordered td{
+
+    border:1px solid #DEE2E6;
+
+}
+
+/* ==========================================
+   Dark Table
+========================================== */
+
+.table-dark{
+
+    --bs-table-bg:#0F172A;
+
+    --bs-table-color:#FFFFFF;
+
+    --bs-table-border-color:#1E293B;
+
+}
+
+.table-dark thead th{
+
+    color:#FFD700;
+
+}
+
+/* ==========================================
+   Badges
+========================================== */
+
+.badge{
+
+    border-radius:30px;
+
+    padding:8px 15px;
+
+    font-size:.8rem;
+
+    font-weight:600;
+
+    letter-spacing:.5px;
+
+}
+
+.badge-success,
+
+.badge.bg-success{
+
+    background:#198754 !important;
+
+    color:#FFFFFF;
+
+}
+
+.badge-warning,
+
+.badge.bg-warning{
+
+    background:#FFC107 !important;
+
+    color:#212529;
+
+}
+
+.badge-danger,
+
+.badge.bg-danger{
+
+    background:#DC3545 !important;
+
+    color:#FFFFFF;
+
+}
+
+.badge-primary,
+
+.badge.bg-primary{
+
+    background:#0D6EFD !important;
+
+    color:#FFFFFF;
+
+}
+
+.badge-secondary,
+
+.badge.bg-secondary{
+
+    background:#6C757D !important;
+
+    color:#FFFFFF;
+
+}
+
+/* ==========================================
+   Status Labels
+========================================== */
+
+.status-in-stock{
+
+    color:#198754;
+
+    font-weight:600;
+
+}
+
+.status-low-stock{
+
+    color:#FFC107;
+
+    font-weight:600;
+
+}
+
+.status-out-stock{
+
+    color:#DC3545;
+
+    font-weight:600;
+
+}
+
+/* ==========================================
+   Action Buttons
+========================================== */
+
+.table .btn{
+
+    margin:2px;
+
+    border-radius:6px;
+
+    padding:6px 10px;
+
+    font-size:.85rem;
+
+}
+
+.table .btn i{
+
+    margin-right:0;
+
+}
+
+/* ==========================================
+   Empty Table Message
+========================================== */
+
+.table-empty{
+
+    text-align:center;
+
+    color:#6C757D;
+
+    padding:40px;
+
+    font-style:italic;
+
+}
+
+/* ==========================================
+   Responsive Tables
+========================================== */
+
+@media (max-width:768px){
+
+    .table{
+
+        min-width:750px;
+
+    }
+
+}
+
+/* ==========================================
+   Print
+========================================== */
+
+@media print{
+
+    .table{
+
+        width:100%;
+
+        font-size:12px;
+
+    }
+
+    .table thead{
+
+        background:#FFFFFF !important;
+
+    }
+
+    .table thead th{
+
+        color:#000 !important;
+
+        border-bottom:2px solid #000;
+
+    }
+
+    .badge{
+
+        border:1px solid #000;
+
+        color:#000 !important;
+
+        background:#FFF !important;
+
+    }
+
+}

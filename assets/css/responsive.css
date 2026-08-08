@@ -1,0 +1,469 @@
+/* ==========================================================
+   HANJARI'S MUSIC HOUSE STOCK MAINTENANCE SYSTEM
+   Responsive Stylesheet
+   responsive.css
+========================================================== */
+
+/* ==========================================
+   Large Tablets (≤1200px)
+========================================== */
+
+@media (max-width:1200px){
+
+    .main-content{
+
+        padding:25px;
+
+    }
+
+    .card-box{
+
+        padding:20px;
+
+    }
+
+    .table{
+
+        font-size:.95rem;
+
+    }
+
+}
+
+/* ==========================================
+   Tablets (≤992px)
+========================================== */
+
+@media (max-width:992px){
+
+    /* Sidebar */
+
+    .sidebar{
+
+        width:80px;
+
+        padding:20px 10px;
+
+    }
+
+    .sidebar .logo{
+
+        text-align:center;
+
+    }
+
+    .sidebar .logo h3{
+
+        justify-content:center;
+
+        font-size:1rem;
+
+    }
+
+    .sidebar .logo h3 span{
+
+        display:none;
+
+    }
+
+    .sidebar .logo p{
+
+        display:none;
+
+    }
+
+    .sidebar .support{
+
+        display:none;
+
+    }
+
+    .sidebar ul li a{
+
+        justify-content:center;
+
+        padding:14px 10px;
+
+    }
+
+    .sidebar ul li a span{
+
+        display:none;
+
+    }
+
+    .sidebar ul li a i{
+
+        margin-right:0;
+
+        font-size:1.2rem;
+
+    }
+
+    /* Main Content */
+
+    .main-content{
+
+        margin-left:80px;
+
+        width:calc(100% - 80px);
+
+        padding:25px;
+
+    }
+
+    /* Dashboard */
+
+    .card-box{
+
+        margin-bottom:20px;
+
+    }
+
+    /* Profile */
+
+    .profile-avatar{
+
+        width:100px;
+
+        height:100px;
+
+        font-size:40px;
+
+    }
+
+}
+
+/* ==========================================
+   Small Tablets (≤768px)
+========================================== */
+
+@media (max-width:768px){
+
+    /* Main */
+
+    .main-content{
+
+        margin-left:0;
+
+        width:100%;
+
+        padding:20px;
+
+    }
+
+    /* Sidebar */
+
+    .sidebar{
+
+        position:fixed;
+
+        left:-260px;
+
+        top:0;
+
+        width:250px;
+
+        height:100vh;
+
+        z-index:999;
+
+        transition:.3s;
+
+    }
+
+    .sidebar.active{
+
+        left:0;
+
+    }
+
+    /* Navbar */
+
+    .topbar{
+
+        display:flex;
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:12px;
+
+    }
+
+    .topbar h3{
+
+        font-size:1.2rem;
+
+    }
+
+    /* Cards */
+
+    .card-box{
+
+        margin-bottom:20px;
+
+    }
+
+    /* Buttons */
+
+    .btn{
+
+        margin-bottom:10px;
+
+    }
+
+    /* Tables */
+
+    .table-responsive{
+
+        overflow-x:auto;
+
+    }
+
+    .table{
+
+        min-width:700px;
+
+    }
+
+    /* Forms */
+
+    .form-container{
+
+        padding:25px;
+
+    }
+
+    /* Profile */
+
+    .profile-avatar{
+
+        width:90px;
+
+        height:90px;
+
+        font-size:36px;
+
+    }
+
+}
+
+/* ==========================================
+   Mobile Phones (≤576px)
+========================================== */
+
+@media (max-width:576px){
+
+    body{
+
+        font-size:14px;
+
+    }
+
+    /* Main */
+
+    .main-content{
+
+        padding:15px;
+
+    }
+
+    /* Login */
+
+    .login-container{
+
+        width:100%;
+
+        padding:25px 20px;
+
+    }
+
+    .login-container h1{
+
+        font-size:1.6rem;
+
+    }
+
+    .login-icon{
+
+        width:70px;
+
+        height:70px;
+
+        font-size:28px;
+
+    }
+
+    /* Buttons */
+
+    .btn{
+
+        width:100%;
+
+        margin-bottom:10px;
+
+    }
+
+    .quick-actions .btn{
+
+        width:100%;
+
+    }
+
+    /* Dashboard Cards */
+
+    .card-box{
+
+        padding:20px;
+
+    }
+
+    .card-box h2{
+
+        font-size:1.8rem;
+
+    }
+
+    /* Profile */
+
+    .profile-avatar{
+
+        width:80px;
+
+        height:80px;
+
+        font-size:30px;
+
+    }
+
+    /* Tables */
+
+    .table{
+
+        display:block;
+
+        overflow-x:auto;
+
+        white-space:nowrap;
+
+    }
+
+    /* Forms */
+
+    .form-container{
+
+        padding:20px;
+
+    }
+
+    .form-control,
+
+    .form-select{
+
+        font-size:14px;
+
+    }
+
+    /* Alerts */
+
+    .alert{
+
+        font-size:.9rem;
+
+    }
+
+    /* Footer */
+
+    footer{
+
+        text-align:center;
+
+        font-size:.85rem;
+
+    }
+
+}
+
+/* ==========================================
+   Very Small Devices (≤400px)
+========================================== */
+
+@media (max-width:400px){
+
+    .main-content{
+
+        padding:12px;
+
+    }
+
+    .login-container{
+
+        padding:20px 15px;
+
+    }
+
+    .login-container h1{
+
+        font-size:1.4rem;
+
+    }
+
+    .profile-avatar{
+
+        width:70px;
+
+        height:70px;
+
+        font-size:26px;
+
+    }
+
+    .card-box{
+
+        padding:15px;
+
+    }
+
+    .card-box h2{
+
+        font-size:1.5rem;
+
+    }
+
+    .btn{
+
+        font-size:.9rem;
+
+        padding:10px;
+
+    }
+
+    .table{
+
+        font-size:.85rem;
+
+    }
+
+}
+
+/* ==========================================
+   Landscape Phones
+========================================== */
+
+@media (max-height:500px) and (orientation:landscape){
+
+    .login-container{
+
+        margin:20px auto;
+
+    }
+
+    .sidebar{
+
+        overflow-y:auto;
+
+    }
+
+}

@@ -1,0 +1,727 @@
+/* ==========================================================
+   HANJARI'S MUSIC HOUSE
+   GLOBAL SYSTEM STYLES
+========================================================== */
+
+:root {
+    --navy: #0f172a;
+    --navy-light: #16213e;
+    --navy-dark: #0b1120;
+
+    --gold: #ffd700;
+    --gold-dark: #d4af00;
+    --gold-soft: #fff7cc;
+
+    --cream: #fffdf6;
+    --white: #ffffff;
+
+    --text: #263238;
+    --text-light: #6c757d;
+
+    --border: #e2e8f0;
+
+    --success: #198754;
+    --danger: #dc3545;
+    --warning: #ffc107;
+
+    --sidebar-width: 260px;
+
+    --shadow-sm: 0 4px 12px rgba(15, 23, 42, .08);
+    --shadow-md: 0 10px 25px rgba(15, 23, 42, .12);
+    --shadow-lg: 0 20px 45px rgba(15, 23, 42, .18);
+}
+
+/* ==========================================================
+   RESET
+========================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: #f5f7fb;
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* ==========================================================
+   GLOBAL LINKS
+========================================================== */
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: inherit;
+}
+
+/* ==========================================================
+   APP CONTAINER
+========================================================== */
+
+.app-container {
+    min-height: calc(100vh - 80px);
+}
+
+/* ==========================================================
+   MAIN CONTENT
+========================================================== */
+
+.main-content {
+    margin-left: var(--sidebar-width);
+    min-height: 100vh;
+    padding: 30px;
+
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(255, 215, 0, .05),
+            transparent 30%
+        ),
+        #f5f7fb;
+}
+
+/* ==========================================================
+   PAGE HEADINGS
+========================================================== */
+
+.page-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 6px;
+}
+
+.page-subtitle {
+    color: var(--text-light);
+    margin-bottom: 25px;
+}
+
+/* ==========================================================
+   CARDS
+========================================================== */
+
+.card {
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+    background: var(--white);
+}
+
+.card-header {
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    padding: 18px 22px;
+}
+
+.card-header h5,
+.card-header h4,
+.card-header h3 {
+    margin: 0;
+    color: var(--navy);
+    font-weight: 600;
+}
+
+/* ==========================================================
+   BUTTONS
+========================================================== */
+
+.btn {
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    transition: all .25s ease;
+}
+
+.btn-primary {
+    background: var(--navy);
+    border-color: var(--navy);
+    color: var(--white);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background: var(--navy-light);
+    border-color: var(--navy-light);
+    color: var(--white);
+    transform: translateY(-1px);
+}
+
+.btn-gold {
+    background: var(--gold);
+    border: 1px solid var(--gold);
+    color: var(--navy);
+    font-weight: 600;
+}
+
+.btn-gold:hover,
+.btn-gold:focus {
+    background: var(--gold-dark);
+    border-color: var(--gold-dark);
+    color: var(--navy);
+    transform: translateY(-1px);
+}
+
+.btn-danger {
+    color: var(--white);
+}
+
+.btn-danger:hover {
+    transform: translateY(-1px);
+}
+
+.btn-secondary:hover {
+    transform: translateY(-1px);
+}
+
+/* ==========================================================
+   ALERTS
+========================================================== */
+
+.alert {
+    border-radius: 10px;
+    border-width: 1px;
+}
+
+/* ==========================================================
+   BADGES
+========================================================== */
+
+.badge {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    border-radius: 20px;
+    padding: 7px 12px;
+}
+
+/* ==========================================================
+   FORMS
+========================================================== */
+
+.form-control,
+.form-select {
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    padding: 11px 14px;
+    font-family: 'Poppins', sans-serif;
+    transition: all .25s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--gold);
+    box-shadow: 0 0 0 .2rem rgba(255, 215, 0, .18);
+}
+
+.form-label {
+    font-weight: 600;
+    color: var(--navy);
+}
+
+/* ==========================================================
+   TABLES - GLOBAL
+========================================================== */
+
+.table {
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+
+.table thead th {
+    background: var(--navy);
+    color: var(--white);
+    border-bottom: 2px solid var(--gold);
+    font-size: .82rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    white-space: nowrap;
+}
+
+.table tbody td {
+    color: var(--text);
+    border-color: var(--border);
+}
+
+.table tbody tr {
+    transition: background-color .2s ease;
+}
+
+.table-hover tbody tr:hover {
+    background: rgba(255, 215, 0, .07);
+}
+
+/* ==========================================================
+   USER MANAGEMENT
+========================================================== */
+
+/* Page wrapper */
+
+.user-management {
+    width: 100%;
+}
+
+/* User management heading */
+
+.user-management .page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.user-management .page-header h2 {
+    margin: 0;
+    color: var(--navy);
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+.user-management .page-header p {
+    margin: 5px 0 0;
+    color: var(--text-light);
+    font-size: .9rem;
+}
+
+/* User management card */
+
+.user-management .user-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+}
+
+/* Card header */
+
+.user-management .user-card-header {
+    padding: 18px 22px;
+    background: linear-gradient(
+        135deg,
+        var(--navy),
+        var(--navy-light)
+    );
+    color: var(--white);
+    border-bottom: 3px solid var(--gold);
+}
+
+.user-management .user-card-header h5 {
+    margin: 0;
+    color: var(--white);
+    font-weight: 600;
+}
+
+.user-management .user-card-header i {
+    color: var(--gold);
+    margin-right: 8px;
+}
+
+/* Search/filter area */
+
+.user-management .user-toolbar {
+    padding: 18px 22px;
+    background: #fafbfc;
+    border-bottom: 1px solid var(--border);
+}
+
+.user-management .user-search {
+    position: relative;
+}
+
+.user-management .user-search i {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #94a3b8;
+    z-index: 2;
+}
+
+.user-management .user-search input {
+    padding-left: 42px;
+}
+
+/* User table */
+
+.user-management .user-table {
+    width: 100%;
+    margin: 0;
+}
+
+.user-management .user-table thead th {
+    background: var(--navy);
+    color: var(--white);
+    padding: 14px 16px;
+    border: none;
+    border-bottom: 3px solid var(--gold);
+}
+
+.user-management .user-table tbody td {
+    padding: 15px 16px;
+    border-bottom: 1px solid var(--border);
+}
+
+.user-management .user-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.user-management .user-table tbody tr:hover {
+    background: #fffdf2;
+}
+
+/* User avatar */
+
+.user-management .user-avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: var(--navy);
+    color: var(--gold);
+    border: 2px solid var(--gold);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.user-management .user-name {
+    font-weight: 600;
+    color: var(--navy);
+}
+
+.user-management .user-username {
+    display: block;
+    font-size: .78rem;
+    color: var(--text-light);
+}
+
+/* Role badges */
+
+.user-management .role-admin {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    background: rgba(255, 215, 0, .18);
+    border: 1px solid #e4bd00;
+    color: #705900;
+    font-size: .78rem;
+    font-weight: 600;
+}
+
+.user-management .role-storekeeper {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    background: #eaf2ff;
+    border: 1px solid #b7cff7;
+    color: #24558f;
+    font-size: .78rem;
+    font-weight: 600;
+}
+
+/* Status badges */
+
+.user-management .status-active {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    background: #eaf7ef;
+    color: #157347;
+    font-size: .78rem;
+    font-weight: 600;
+}
+
+.user-management .status-inactive {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    background: #f8e9e9;
+    color: #a52834;
+    font-size: .78rem;
+    font-weight: 600;
+}
+
+/* Action buttons */
+
+.user-management .user-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 6px;
+}
+
+.user-management .user-actions .btn {
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-management .user-actions .btn i {
+    margin: 0;
+}
+
+/* Empty state */
+
+.user-management .empty-users {
+    padding: 60px 20px;
+    text-align: center;
+    color: var(--text-light);
+}
+
+.user-management .empty-users i {
+    font-size: 3rem;
+    color: var(--gold);
+    margin-bottom: 15px;
+}
+
+.user-management .empty-users h5 {
+    color: var(--navy);
+    margin-bottom: 7px;
+}
+
+/* Admin protection notice */
+
+.user-management .admin-notice {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-top: 20px;
+    padding: 15px 18px;
+    background: #fff8d9;
+    border: 1px solid #ead27a;
+    border-left: 4px solid var(--gold);
+    border-radius: 8px;
+    color: #665300;
+}
+
+.user-management .admin-notice i {
+    color: #b38f00;
+    margin-top: 3px;
+}
+
+/* ==========================================================
+   SITE FOOTER
+========================================================== */
+
+.site-footer {
+    margin-left: var(--sidebar-width);
+    background: var(--navy);
+    color: #dce3ee;
+    border-top: 3px solid var(--gold);
+    padding: 25px 30px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+    color: var(--white);
+    font-size: 1rem;
+}
+
+.footer-brand i {
+    color: var(--gold);
+    font-size: 1.1rem;
+}
+
+.footer-system {
+    margin: 5px 0 12px;
+    color: #aeb9c9;
+    font-size: .85rem;
+}
+
+.footer-copy {
+    margin: 0;
+    color: #8f9bad;
+    font-size: .78rem;
+}
+
+.footer-version {
+    margin-left: 8px;
+    color: var(--gold);
+}
+
+/* ==========================================================
+   SCROLLBAR
+========================================================== */
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #eef1f5;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #b8c0cc;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #8d98a8;
+}
+
+/* ==========================================================
+   SELECTION
+========================================================== */
+
+::selection {
+    background: var(--gold);
+    color: var(--navy);
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width: 992px) {
+
+    .main-content {
+        margin-left: 0;
+        padding: 25px;
+    }
+
+    .site-footer {
+        margin-left: 0;
+    }
+
+    .user-management .page-header {
+        align-items: flex-start;
+    }
+
+    .user-management .user-table {
+        min-width: 900px;
+    }
+
+    .user-management .user-card {
+        overflow-x: auto;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .user-management .page-header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .user-management .page-header .btn {
+        width: 100%;
+    }
+
+    .user-management .user-toolbar {
+        padding: 15px;
+    }
+
+    .user-management .user-actions {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .main-content {
+        padding: 18px;
+    }
+
+    .page-title {
+        font-size: 1.6rem;
+    }
+
+    .site-footer {
+        padding: 20px 15px;
+    }
+
+    .footer-copy {
+        line-height: 1.8;
+    }
+
+    .user-management .user-card {
+        border-radius: 10px;
+    }
+
+    .user-management .user-table {
+        min-width: 850px;
+    }
+}
+
+/* ==========================================================
+   PRINT
+========================================================== */
+
+@media print {
+
+    .sidebar,
+    .topbar,
+    .navbar,
+    .site-footer,
+    .no-print,
+    .user-management .page-header .btn,
+    .user-management .user-actions {
+        display: none !important;
+    }
+
+    .main-content {
+        margin: 0;
+        padding: 0;
+        background: #fff;
+    }
+
+    .user-management .user-card {
+        box-shadow: none;
+        border: none;
+    }
+
+    .user-management .user-card-header {
+        background: #fff;
+        color: #000;
+        border-bottom: 2px solid #000;
+    }
+
+    .user-management .user-card-header h5 {
+        color: #000;
+    }
+
+    .user-management .user-table thead th {
+        background: #fff;
+        color: #000;
+        border-bottom: 2px solid #000;
+    }
+}

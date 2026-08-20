@@ -49,7 +49,7 @@ include "../includes/header.php";
 
                     <h4 class="mb-1">
 
-                        <span id="greeting"></span>,
+                        <span id="greeting"></span>
 
                         <?= htmlspecialchars($_SESSION['full_name']); ?>
 

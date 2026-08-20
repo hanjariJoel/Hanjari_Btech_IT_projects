@@ -1,18 +1,53 @@
 <?php
 
-session_start();
+require_once __DIR__ . "/../includes/session.php";
 
-if (!isset($_SESSION['user_id'])) {
-    header("Location: ../login/login.php");
-    exit;
+
+/*
+|--------------------------------------------------------------------------
+| REQUIRE LOGIN
+|--------------------------------------------------------------------------
+*/
+
+function requireLogin()
+{
+    if (!isset($_SESSION['user_id'])) {
+
+        header(
+            "Location: /hanjari_music_house/auth/login.php"
+        );
+
+        exit();
+    }
 }
 
 
+/*
+|--------------------------------------------------------------------------
+| REQUIRE ROLE
+|--------------------------------------------------------------------------
+*/
+
 function requireRole($role)
 {
-    if ($_SESSION['role'] !== $role) {
-        header("Location: ../dashboard/dashboard.php");
-        exit;
+    requireLogin();
+
+    $currentRole = strtolower(
+        trim($_SESSION['role'] ?? '')
+    );
+
+    $requiredRole = strtolower(
+        trim($role)
+    );
+
+
+    if ($currentRole !== $requiredRole) {
+
+        header(
+            "Location: /hanjari_music_house/dashboard/dashboard.php"
+        );
+
+        exit();
     }
 }
 

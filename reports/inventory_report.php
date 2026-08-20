@@ -62,7 +62,7 @@ $inventory = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 </p>
 
                 <p class="mb-1">
-                    📞 +254 712 345 678
+                    📞 +254 740 704619
                     |
                     ✉ support@hanjarimusic.co.ke
                 </p>

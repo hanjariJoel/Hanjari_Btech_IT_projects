@@ -61,11 +61,14 @@
                 <span>Reports</span>
             </a>
         </li>
-        <?php echo $_SESSION['role']; ?>
-        <?php if (isset($_SESSION['role']) && strtolower($_SESSION['role']) === 'administrator'): ?>
+      
+       <?php if (
+    isset($_SESSION['role']) &&
+    strtolower(trim($_SESSION['role'])) === 'administrator'
 
+    ): ?>
         <li>
-            <a href="/hanjari_music_house/admin/users/add_user.php">
+            <a href="/hanjari_music_house/admin/users/index.php">
                 <i class="fa-solid fa-users-gear"></i>
                 <span>User Management</span>
             </a>

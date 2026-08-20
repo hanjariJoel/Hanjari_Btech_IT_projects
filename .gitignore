@@ -1,0 +1,52 @@
+# ==========================================================
+# HANJARI'S MUSIC HOUSE
+# Git Ignore File
+# ==========================================================
+
+
+# Local development files
+.freebuff/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Database credentials
+config/database.php
+
+# Local database dumps / backups
+database/*.bak
+database/*.backup
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE / editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.temp
+
+# Composer
+/vendor/
+
+# Node
+/node_modules/
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# XAMPP temporary files
+/xampp/

@@ -1,0 +1,515 @@
+/* ==========================================================
+   HANJARI'S MUSIC HOUSE
+   STOREKEEPER REGISTRATION
+========================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+body.registration-page {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 35px 20px;
+
+    font-family: 'Poppins', sans-serif;
+
+    background:
+        radial-gradient(
+            circle at 10% 10%,
+            rgba(255, 215, 0, .15),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 90% 90%,
+            rgba(255, 255, 255, .05),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #0F172A 0%,
+            #16213E 50%,
+            #1E293B 100%
+        );
+
+    color: #0F172A;
+}
+
+
+/* ==========================================================
+   CONTAINER
+========================================================== */
+
+.registration-container {
+
+    width: 520px;
+
+    max-width: 100%;
+
+    background: #FFFFFF;
+
+    border-radius: 18px;
+
+    border-top: 6px solid #FFD700;
+
+    padding: 38px 42px 28px;
+
+    box-shadow:
+        0 25px 55px rgba(0, 0, 0, .35);
+}
+
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+.registration-header {
+
+    text-align: center;
+
+    margin-bottom: 28px;
+}
+
+.registration-icon {
+
+    width: 72px;
+
+    height: 72px;
+
+    margin: 0 auto 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #0F172A;
+
+    border: 3px solid #FFD700;
+
+    color: #FFD700;
+
+    font-size: 27px;
+}
+
+.registration-header h1 {
+
+    font-family: 'Playfair Display', serif;
+
+    color: #0F172A;
+
+    font-size: 1.9rem;
+
+    margin-bottom: 8px;
+}
+
+.registration-header p {
+
+    color: #64748B;
+
+    font-size: .9rem;
+
+    line-height: 1.6;
+}
+
+
+/* ==========================================================
+   ALERTS
+========================================================== */
+
+.registration-alert {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 12px 14px;
+
+    border-radius: 9px;
+
+    margin-bottom: 20px;
+
+    font-size: .85rem;
+}
+
+.registration-alert.error {
+
+    background: #FEF2F2;
+
+    color: #B91C1C;
+
+    border: 1px solid #FECACA;
+}
+
+.registration-alert.success {
+
+    background: #F0FDF4;
+
+    color: #15803D;
+
+    border: 1px solid #BBF7D0;
+}
+
+
+/* ==========================================================
+   FORM
+========================================================== */
+
+.registration-form {
+
+    width: 100%;
+}
+
+
+/* ==========================================================
+   FORM GROUP
+========================================================== */
+
+.form-group {
+
+    margin-bottom: 18px;
+}
+
+.form-group label {
+
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #334155;
+
+    font-size: .86rem;
+
+    font-weight: 600;
+}
+
+.form-group label i {
+
+    width: 20px;
+
+    color: #C49A00;
+}
+
+
+/* ==========================================================
+   INPUTS
+========================================================== */
+
+.form-group input {
+
+    width: 100%;
+
+    height: 48px;
+
+    padding: 0 14px;
+
+    border: 1px solid #CBD5E1;
+
+    border-radius: 9px;
+
+    background: #FAFAFA;
+
+    color: #0F172A;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: .88rem;
+
+    outline: none;
+
+    transition: .25s ease;
+}
+
+.form-group input:focus {
+
+    background: #FFFFFF;
+
+    border-color: #FFD700;
+
+    box-shadow:
+        0 0 0 3px rgba(255, 215, 0, .15);
+}
+
+.form-group input::placeholder {
+
+    color: #94A3B8;
+}
+
+
+/* ==========================================================
+   PASSWORD
+========================================================== */
+
+.password-wrapper {
+
+    position: relative;
+}
+
+.password-wrapper input {
+
+    padding-right: 48px;
+}
+
+.password-toggle {
+
+    position: absolute;
+
+    right: 8px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 34px;
+
+    height: 34px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: none;
+
+    background: transparent;
+
+    color: #64748B;
+
+    cursor: pointer;
+
+    border-radius: 50%;
+}
+
+.password-toggle:hover {
+
+    background: #F1F5F9;
+
+    color: #0F172A;
+}
+
+
+/* ==========================================================
+   ROLE INFO
+========================================================== */
+
+.role-info {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 14px;
+
+    margin: 5px 0 22px;
+
+    background: #FFFBEB;
+
+    border: 1px solid #FDE68A;
+
+    border-radius: 10px;
+}
+
+.role-info > i {
+
+    width: 40px;
+
+    height: 40px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #FFF3B0;
+
+    color: #B8860B;
+
+    border-radius: 50%;
+
+    font-size: 17px;
+}
+
+.role-info div {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 2px;
+}
+
+.role-info strong {
+
+    color: #334155;
+
+    font-size: .85rem;
+}
+
+.role-info span {
+
+    color: #8A6500;
+
+    font-weight: 600;
+
+    font-size: .9rem;
+}
+
+.role-info small {
+
+    color: #64748B;
+
+    font-size: .72rem;
+}
+
+
+/* ==========================================================
+   REGISTER BUTTON
+========================================================== */
+
+.register-button {
+
+    width: 100%;
+
+    height: 50px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #FFD700;
+
+    color: #0F172A;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: .9rem;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: .25s ease;
+}
+
+.register-button i {
+
+    margin-right: 7px;
+}
+
+.register-button:hover {
+
+    background: #E6C200;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 18px rgba(255, 215, 0, .28);
+}
+
+
+/* ==========================================================
+   LOGIN LINK
+========================================================== */
+
+.login-link {
+
+    text-align: center;
+
+    margin-top: 18px;
+
+    color: #64748B;
+
+    font-size: .82rem;
+}
+
+.login-link a {
+
+    color: #B8860B;
+
+    font-weight: 600;
+
+    text-decoration: none;
+}
+
+.login-link a:hover {
+
+    text-decoration: underline;
+}
+
+
+/* ==========================================================
+   FOOTER
+========================================================== */
+
+.registration-footer {
+
+    margin-top: 25px;
+
+    padding-top: 17px;
+
+    border-top: 1px solid #E2E8F0;
+
+    text-align: center;
+
+    color: #64748B;
+
+    font-size: .75rem;
+
+    line-height: 1.7;
+}
+
+.registration-footer strong {
+
+    color: #475569;
+}
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width: 600px) {
+
+    body.registration-page {
+
+        padding: 20px 14px;
+
+        align-items: flex-start;
+    }
+
+    .registration-container {
+
+        padding: 30px 22px 24px;
+
+        border-radius: 15px;
+    }
+
+    .registration-header h1 {
+
+        font-size: 1.6rem;
+    }
+
+}
